@@ -22,7 +22,7 @@ This command creates an empty Git repository - basically a .git directory with s
 7. ``` dvc init ```
 Initialize a DVC project in the current working directory.At DVC initialization, a new .dvc/ directory is created for configuration, default cache location, and other internal files and directories, that are hidden from the user. This directory is automatically staged with git add, so it can be easily committed with Git.
 
-8. ``` dvc add data_given/winequality.csv ``
+8. ``` dvc add data_given/winequality.csv ```
 The dvc add command is analogous to git add, in that it makes DVC aware of the target data, in order to start versioning it. It creates a .dvc file to track the added data.
 
 9. ``` git add . ```
@@ -31,5 +31,19 @@ Add file contents to the index.The "index" holds a snapshot of the content of th
 10. ``` git commit -m "first commit" ```
 git commit : Record changes to the repository
 -m : specifies the next paramter as message 
+
+
+11. ``` git add . && git commit -m "updated README.md" ``` : this is chain command that  can be used after we make any changes in files and commit same to reprository.
+
+12. Create git reprository in github
+
+13. ``` git remote add origin https://github.com/KalyaniAvhale/simple-dvc-demo.git ```
+: push the commits in the local branch named master to the remote named origin". Once this is executed, all the stuff that you last synchronised with origin will be sent to the remote repository and other people will be able to see them there.
+
+14. ``` git branch -M main ``` : 
+git branch command lets you create, list, rename, and delete branches. Here we will rename Master branch to main 
+
+15. ``` git push -u origin main `` : 
+git push -u origin master is used for pushing local content to GitHub. In the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream. ' and the master is the branch.
 
 
