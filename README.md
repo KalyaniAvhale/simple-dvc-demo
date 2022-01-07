@@ -43,7 +43,7 @@ git commit : Record changes to the repository
 14. ``` git branch -M main ``` : 
 git branch command lets you create, list, rename, and delete branches. Here we will rename Master branch to main 
 
-15. ``` git push -u origin main `` : 
+15. ``` git push -u origin main ``` : 
 git push -u origin master is used for pushing local content to GitHub. In the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream. ' and the master is the branch.
 
 
