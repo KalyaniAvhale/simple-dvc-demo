@@ -1,6 +1,5 @@
 #local packages 
--e
-
+-e .
 
 #third party packages
 dvc
@@ -9,3 +8,4 @@ sklearn
 pandas
 pytest
 tox
+flake8

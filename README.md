@@ -12,8 +12,7 @@
 create template.py d=to define folder structure,and run it 
 ``` $python template.py```
 
-5. Download Wine Quality dataset 
-![https://archive.ics.uci.edu/ml/datasets/wine+quality]
+5. Download [Wine Quality dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality)
 
 6. ``` git init ``` 
 This command creates an empty Git repository - basically a .git directory with subdirectories for objects, refs/heads, refs/tags, and template files. An initial branch without any commits will be created
@@ -91,7 +90,7 @@ We can use ``` dvc dag ``` cmd to display the generated DAG for the pipeline sta
 ## Stage 2 : 
 Split data
 
-## STage 3 : 
+## Stage 3 : 
 Train and Evaluate model 
 
 ## Stage 4 :
