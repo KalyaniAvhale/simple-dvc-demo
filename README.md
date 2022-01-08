@@ -86,3 +86,22 @@ We can use ``` dvc dag ``` cmd to display the generated DAG for the pipeline sta
           | load_data |
           
           +-----------+
+
+
+## Stage 2 : 
+Split data
+
+## STage 3 : 
+Train and Evaluate model 
+
+## Stage 4 :
+
+1. tox command 
+``` $ tox ```
+
+2. setup commands :
+
+``` pip install -e ```
+
+-- Build your own package command - 
+``` python setup.py sdist bdist wheel ```
