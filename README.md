@@ -50,3 +50,7 @@ git push -u origin master is used for pushing local content to GitHub. In the co
 In order to track parameters and hyperparameters associated to machine learning experiments in DVC projects, DVC provides a different type of dependencies: parameters. They usually have simple names like epochs, learning-rate, batch_size, etc.
 To start tracking parameters, list them under the params field of dvc.yaml .OR python files can be used additionally (listed under params: with a sub-list of param values). These files are typically written manually (or they can be generated) and they can be versioned directly with Git.The default parameters file name is params.yaml, but any other YAML 1.2, JSON, TOML , python file can be used .
 
+Stage 1 : Load Data 
+17. get_data.py :
+File will be used to get data from given source , this will include reading params from params.yaml , process it and return the dataframe.
+
