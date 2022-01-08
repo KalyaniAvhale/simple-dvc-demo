@@ -54,3 +54,23 @@ Stage 1 : Load Data
 17. get_data.py :
 File will be used to get data from given source , this will include reading params from params.yaml , process it and return the dataframe.
 
+18. load_data :
+This script will read data from source and store it under data/raw dir for futher processing.
+
+19. Now define pipeline stages in dvc.yaml.
+
+After this  run cmd to Reproduce complete or partial pipelines by executing commands defined in their stages in the correct order.
+``` dvc repro ```
+
+It stores all the data files, intermediate or final results in the cache (unless the --no-commit option is used), and updates the hash values of changed dependencies and outputs in the dvc.lock and .dvc files.
+We can use ``` dvc dag ``` cmd to display the generated DAG for the pipeline stages . ( After this stage 1 our graph would look something like this )
+
++--------------------------------+
+| data_given\winequality.csv.dvc |
++--------------------------------+
+                 *
+                 *
+                 *          
+          +-----------+
+          | load_data |
+          +-----------+
